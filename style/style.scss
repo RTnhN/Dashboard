@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  grid-template-areas: 
+    "sidebar searchUser searchUser"
+    "sidebar nameOperation nameOperation"
+    "sidebar projects announcements"
+    "sidebar projects trending";
+}
+
+.sidebar{
+  grid-area: sidebar;
+  background-color: blue;
+}
+
+.searchUserBar{
+  grid-area: searchUser;
+  background-color: green;
+}
+
+.nameOperationBar{
+  grid-area: nameOperation;
+  background-color: red;
+}
+
+.projectContainer{
+  grid-area: projects;
+  background-color: yellow;
+}
+.announcementContainer{
+  grid-area: announcements;
+  background-color: pink;
+}
+
+.trendingContainer{
+  grid-area: trending;
+  background-color: orange;
+}
+
+
+
+
+
