@@ -7,8 +7,8 @@ body{
   height: 100vh;
   width: 100vw;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: minmax(20vw,255px) 1fr 20vw;
+  grid-template-rows: 5vh 10vh 1fr 1fr;
   gap: 15px;
   grid-template-areas: 
     "sidebar searchUser searchUser"
