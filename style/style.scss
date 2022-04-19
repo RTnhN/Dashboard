@@ -17,8 +17,7 @@ body{
   width: 100vw;
   display:grid;
   grid-template-columns: minmax(20vw,255px) 1fr 20vw;
-  grid-template-rows: 5vh 10vh 1fr 1fr;
-  gap: 15px;
+  grid-template-rows: 10vh 15vh 1fr 1fr;
   grid-template-areas: 
     "sidebar searchUser searchUser"
     "sidebar nameOperation nameOperation"
