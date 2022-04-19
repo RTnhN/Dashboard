@@ -18,11 +18,11 @@ $OperationButtons: #e45411;
 }
 
 body{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display:grid;
   grid-template-columns: minmax(18vw,270px) 1fr 23vw;
-  grid-template-rows: 9vh 11vh 1fr 1fr;
+  grid-template-rows: 9vh 11vh auto 1fr;
   grid-template-areas: 
     "sidebar searchUser searchUser"
     "sidebar nameOperation nameOperation"
@@ -237,7 +237,6 @@ body{
   gap: 16px;
   width:100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  overflow-y:scroll;
 }
 
 .projectCard{
