@@ -62,12 +62,12 @@ body{
 }
 .announcementContainer{
   grid-area: announcements;
-  background-color: pink;
+  background-color: hsl(220, 0%, 80%);
 }
 
 .trendingContainer{
   grid-area: trending;
-  background-color: orange;
+  background-color: hsl(220, 0%, 80%);
 }
 
 .material-icons-outlined.md-light { color: rgba(255, 255, 255, 1); }
