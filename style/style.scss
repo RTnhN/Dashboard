@@ -219,3 +219,54 @@ body{
 .operationContainer>button>span{
   margin-right:.5em;
 }
+.projectsTitle{
+  margin-bottom: 16px;
+}
+.projectsSubcontainer{
+  display:grid;
+  gap: 1em;
+  width:100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+}
+
+.projectCard{
+  padding:16px;
+  height:200px;
+  background-color: white;
+  border-radius: 1em;
+  border-left:1em solid yellow;
+  display:grid;
+  grid-template-columns: 1fr 40px 40px 40px;
+  grid-template-rows: 2em 1fr 40px;
+  grid-template-areas: 
+  "title title title title"
+  "body body body body"
+  ". favorite watch share"
+  ;
+
+}
+
+.projectCardTextHeading{
+  grid-area: title;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.projectCardTextBody{
+  grid-area: body;
+  font-size: 1em;
+}
+
+.projectCard>button{
+  background:none;
+  border:none;
+
+}
+.cardFavoriteButton{
+  grid-area: favorite;
+}
+.cardWatchButton{
+  grid-area: watch;
+}
+.cardShareButton{
+  grid-area: share;
+}
