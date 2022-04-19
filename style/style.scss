@@ -224,7 +224,7 @@ body{
   display:grid;
   gap: 1em;
   width:100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .projectCard{
