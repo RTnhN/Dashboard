@@ -4,7 +4,7 @@ $logoFontSize: 30px;
 $logoSize: $logoFontSize *1.75;
 $iconSize: 25px;
 $navOffset: calc($logoSize/2 - $iconSize/2);
-$pagePadding: 40px;
+$pagePadding: 20px;
 
 $sidebarColor: #083D77;
 $backgroundColor: #eeeeee;
@@ -59,7 +59,7 @@ body{
 
 .projectsContainer{
   grid-area: projects;
-  padding: $pagePadding;
+  padding: $pagePadding 16px 16px $pagePadding;
   background-color: $backgroundColor;
   display: flex;
   flex-direction: column;
@@ -67,13 +67,13 @@ body{
 }
 .announcementContainer{
   grid-area: announcements;
-  padding: $pagePadding;
+  padding: $pagePadding $pagePadding $pagePadding 0;
   background-color: $backgroundColor;
 }
 
 .trendingContainer{
   grid-area: trending;
-  padding: 0 $pagePadding $pagePadding $pagePadding;
+  padding: 0 $pagePadding 16px 0;
   background-color: $backgroundColor;
 }
 
@@ -232,7 +232,7 @@ body{
 }
 .projectsSubcontainer{
   display:grid;
-  gap: 1em;
+  gap: 16px;
   width:100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
