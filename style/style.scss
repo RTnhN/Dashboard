@@ -269,3 +269,22 @@ body{
 .cardShareButton{
   grid-area: share;
 }
+
+.announcementTitle{
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.announcementSubcontainer{
+  padding:16px;
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.announcementCardBody{
+  overflow: hidden;
+
+}
