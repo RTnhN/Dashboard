@@ -4,7 +4,7 @@ $logoFontSize: 30px;
 $logoSize: $logoFontSize * 2;
 $iconSize: 25px;
 $navOffset: calc($logoSize/2 - $iconSize/2);
-
+$pagePadding: 40px;
 
 *{
   margin: 0;
@@ -31,12 +31,12 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
+  padding: $pagePadding $pagePadding 0 $pagePadding;
 }
 
 .searchUserBar{
   grid-area: searchUser;
-  padding: 16px 16px 0 16px;
+  padding: $pagePadding $pagePadding 0 $pagePadding;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,7 +45,7 @@ body{
 
 .nameOperationBar{
   grid-area: nameOperation;
-  padding-right: 16px;
+  padding: 0 $pagePadding 0 $pagePadding;
   display:flex;
   flex-direction: row;
   align-items: center;
@@ -54,6 +54,7 @@ body{
 
 .projectsContainer{
   grid-area: projects;
+  padding: $pagePadding;
   background-color: hsl(220, 100%, 95%);
   display: flex;
   flex-direction: column;
@@ -61,11 +62,13 @@ body{
 }
 .announcementContainer{
   grid-area: announcements;
+  padding: $pagePadding;
   background-color: hsl(220, 100%, 95%);
 }
 
 .trendingContainer{
   grid-area: trending;
+  padding-right: $pagePadding;
   background-color: hsl(220, 100%, 95%);
 }
 
@@ -196,7 +199,6 @@ body{
   justify-content: space-between;
   align-items: center;
   gap: 1em;
-  margin-left: 12px;
 }
 
 .operationContainer button{
