@@ -68,7 +68,7 @@ body{
 
 .trendingContainer{
   grid-area: trending;
-  padding-right: $pagePadding;
+  padding: 0 $pagePadding $pagePadding $pagePadding;
   background-color: hsl(220, 100%, 95%);
 }
 
@@ -275,16 +275,46 @@ body{
   font-weight: bold;
 }
 
-.announcementSubcontainer{
+.announcementSubcontainer, .trendingSubcontainer{
   padding:16px;
   display:flex;
-  flex-direction: column;
   gap: 1em;
+  flex-direction: column;
   background-color: white;
   border-radius: 10px;
 }
 
-.announcementCardBody{
-  overflow: hidden;
+.trendingSubcontainer{
+  gap:2em;
+}
 
+.trendingTitle{
+  margin-bottom: 16px;
+}
+
+.trendingCard{
+  display:grid;
+  column-gap: 10px;
+  grid-template-columns: 48px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "avatar handle"
+  "avatar name";
+}
+
+.trendingCardIcon{
+  grid-area: avatar;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+}
+
+.trendingCardHandle{
+  grid-area: handle;
+  font-size: 1em;
+}
+
+.trendingCardDisplayName{
+  grid-area: name;
+  font-size: 1em;
 }
