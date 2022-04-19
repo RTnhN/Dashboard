@@ -54,20 +54,19 @@ body{
 
 .projectsContainer{
   grid-area: projects;
-  padding: 16px;
-  background-color: hsl(220, 0%, 80%);
+  background-color: hsl(220, 100%, 95%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .announcementContainer{
   grid-area: announcements;
-  background-color: hsl(220, 0%, 80%);
+  background-color: hsl(220, 100%, 95%);
 }
 
 .trendingContainer{
   grid-area: trending;
-  background-color: hsl(220, 0%, 80%);
+  background-color: hsl(220, 100%, 95%);
 }
 
 .material-icons-outlined.md-light { color: rgba(255, 255, 255, 1); }
