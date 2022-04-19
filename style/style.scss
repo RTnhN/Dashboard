@@ -36,6 +36,11 @@ body{
 
 .searchUserBar{
   grid-area: searchUser;
+  padding: 16px 16px 0 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nameOperationBar{
