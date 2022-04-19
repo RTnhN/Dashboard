@@ -48,9 +48,13 @@ body{
   justify-content: space-between;
 }
 
-.projectContainer{
+.projectsContainer{
   grid-area: projects;
   padding: 16px;
+  background-color: hsl(220, 0%, 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .announcementContainer{
   grid-area: announcements;
