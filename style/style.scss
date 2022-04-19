@@ -6,6 +6,11 @@ $iconSize: 25px;
 $navOffset: calc($logoSize/2 - $iconSize/2);
 $pagePadding: 40px;
 
+$sidebarColor: #083D77;
+$backgroundColor: #eeeeee;
+$accentColor: #e9bc1b;
+$OperationButtons: #e45411;
+
 *{
   margin: 0;
   padding: 0;
@@ -27,7 +32,7 @@ body{
 
 .sidebar{
   grid-area: sidebar;
-  background-color: blue;
+  background-color: $sidebarColor;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -55,7 +60,7 @@ body{
 .projectsContainer{
   grid-area: projects;
   padding: $pagePadding;
-  background-color: hsl(220, 100%, 95%);
+  background-color: $backgroundColor;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -63,13 +68,13 @@ body{
 .announcementContainer{
   grid-area: announcements;
   padding: $pagePadding;
-  background-color: hsl(220, 100%, 95%);
+  background-color: $backgroundColor;
 }
 
 .trendingContainer{
   grid-area: trending;
   padding: 0 $pagePadding $pagePadding $pagePadding;
-  background-color: hsl(220, 100%, 95%);
+  background-color: $backgroundColor;
 }
 
 .material-icons-outlined.md-light { color: rgba(255, 255, 255, 1); }
@@ -203,7 +208,7 @@ body{
 
 .operationContainer button{
   font-size: 1em;
-  background-color: hsl(220, 50%, 50%);
+  background-color: $OperationButtons;
   border:none;
   border-radius: 2em;
   color: white;
@@ -233,7 +238,7 @@ body{
   height:200px;
   background-color: white;
   border-radius: 1em;
-  border-left:1em solid yellow;
+  border-left:1em solid $accentColor;
   display:grid;
   grid-template-columns: 1fr 40px 40px 40px;
   grid-template-rows: 2em 1fr 40px;
